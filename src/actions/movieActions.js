@@ -4,8 +4,8 @@ import { API, SET_MOVIES } from "../constants/actionTypes";
 import { apiPayloadCreator } from "../utils/appUtils";
 
 const getMoviesAC = createAction(API, apiPayloadCreator);
-export const getMovies = () =>
-  getMoviesAC({ url: "/vcvx0", onSuccess: setMovies });
+export const getMovies = (params) =>
+  getMoviesAC({ url: params, onSuccess: setMovies });
 
 //this function will be called upon a successful data fetch  - and passed the retrieved data.
 function setMovies(movies) {

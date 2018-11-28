@@ -13,7 +13,7 @@ class Movies extends Component {
   };
 
   componentDidMount() {
-    this.props.getMovies();
+    this.props.getMovies("/vcvx0");
   }
 
   render() {

@@ -32,6 +32,7 @@ const api = ({ dispatch }) => next => action => {
       dispatch(onSuccess(data));
     })
     .catch(error => {
+      //TODO handle error code here
       // console.log(error.response)
       dispatch(onFailure(error));
     })

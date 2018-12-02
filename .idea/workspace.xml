@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d62b237-a5e2-4223-8140-6d0c1ada9fe2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/CommonTableFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DayPickerFromTo/DayPickerFromTo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/FieldInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/PageNotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/tokenId.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movieActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movieActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Products/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Products/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Questions/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Questions/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Users/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Users/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Works/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Works/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/ContentTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/templates/ContentTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/FooterTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/templates/FooterTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/HeaderTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/templates/HeaderTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MoviesContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MoviesContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Root.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Root.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Root.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Root.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/appUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/appUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/middleware/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+            <state relative-caret-position="418">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -358,18 +330,18 @@
       <workItem from="1543389346121" duration="1279000" />
       <workItem from="1543394144432" duration="2531000" />
       <workItem from="1543726166956" duration="931000" />
-      <workItem from="1543727243370" duration="8783000" />
+      <workItem from="1543727243370" duration="8865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29443000" />
+    <option name="totallyTimeSpent" value="29525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33169398" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33169398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -384,7 +356,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2948164" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2948164" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -715,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middleware/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        <state relative-caret-position="418">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

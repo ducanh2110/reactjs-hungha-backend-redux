@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import FontAwesomeIcon from "./FontAwesomeIcon";
 import Movie from "./Movie";
+import {getTokenId} from "../actions/movieActions";
 
 class Movies extends Component {
   state = {};
@@ -13,7 +14,10 @@ class Movies extends Component {
   };
 
   componentDidMount() {
-    this.props.getMovies("/vcvx0");
+    this.props.getMovies("https://api.myjson.com/bins/vcvx0");
+    this.props.getTokenId("https://reqres.in/api/login", {
+        "email": "peter@klaven",
+    })
   }
 
   render() {
@@ -21,6 +25,9 @@ class Movies extends Component {
       <Fragment>
           {/* Help icon extracted to a separate component */}
           <FontAwesomeIcon icon="search" />
+        <button onClick={() => {
+          console.log('token')
+        }}>ACTIVE TOKEN</button>
         {/* the list of movies */}
         <div>
           {this.props.movies.map(movie => (

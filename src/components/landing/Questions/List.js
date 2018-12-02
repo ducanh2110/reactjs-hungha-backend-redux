@@ -5,8 +5,6 @@ import reqwest from "reqwest";
 import queryString from "query-string";
 import moment from 'moment';
 import CommonTableFilter from "../../common/CommonTableFilter";
-import {setTokenAuthenticated, setUserInfo} from "../../../actions";
-import store from '../../../store';
 
 const Search = Input.Search;
 const Option = Select.Option;

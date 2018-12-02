@@ -1,11 +1,17 @@
 import React from "react";
-import { Route } from "react-router-dom";
-import MoviesContainer from "../containers/MoviesContainer";
+import {Layout} from "antd";
+import HeaderTemplate from "./landing/templates/HeaderTemplate";
+import ContentTemplate from "./landing/templates/ContentTemplate";
+import FooterTemplate from "./landing/templates/FooterTemplate";
 
 const App = () => {
-  return (
-      <Route exact path="/" component={MoviesContainer} />
-  );
+    return (
+        <Layout>
+            <HeaderTemplate/>
+            <ContentTemplate/>
+            <FooterTemplate/>
+        </Layout>
+    );
 };
 
 export default App;

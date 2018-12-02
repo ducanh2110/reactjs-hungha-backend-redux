@@ -1,11 +1,19 @@
 import { createAction } from "redux-actions";
 import { normalize, schema } from "normalizr";
-import { API, SET_MOVIES } from "../constants/actionTypes";
+import {API, SET_MOVIES, SET_TOKEN} from "../constants/actionTypes";
 import { apiPayloadCreator } from "../utils/appUtils";
 
 const getMoviesAC = createAction(API, apiPayloadCreator);
+const getToken = createAction(API, apiPayloadCreator);
+export const getTokenId = (params, data) =>
+  getToken({
+      method: "POST", url: params, onSuccess: setToken, data: data
+  });
+
 export const getMovies = (params) =>
-  getMoviesAC({ url: params, onSuccess: setMovies });
+  getMoviesAC({method: "GET", url: params, onSuccess: setMovies, data: {}, headers: {
+          'Content-Type': 'application/json'
+      }});
 
 //this function will be called upon a successful data fetch  - and passed the retrieved data.
 function setMovies(movies) {
@@ -19,4 +27,13 @@ function setMovies(movies) {
     type: SET_MOVIES,
     payload: normalizedData.entities.movies
   };
+}
+
+function setToken(token) {
+  console.log(token)
+  return {
+    type: SET_TOKEN,
+      payload: token
+  }
+    
 }

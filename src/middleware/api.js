@@ -3,16 +3,16 @@ import { API } from "../constants/actionTypes";
 import { apiEnd, apiStart } from "../actions/apiActions";
 
 //axios default config
-axios.defaults.baseURL = "https://api.myjson.com/bins/";
+// axios.defaults.baseURL = "https://api.myjson.com/bins/";
 axios.defaults.headers.common["Content-Type"] = "application/json";
-axios.defaults.headers.common["Authorization"] = `Bearer ${"fakeAccessToken"}`;
+// axios.defaults.headers.common["Authorization"] = `Bearer ${"fakeAccessToken"}`;
 
 //actual middleware implementation
 const api = ({ dispatch }) => next => action => {
   next(action);
   if (action.type !== API) return;
 
-  const { url, method, data, onSuccess, onFailure, label } = action.payload;
+  const { url, method, data, onSuccess, onFailure, label, headers } = action.payload;
 
   const dataOrParams = ["GET", "DELETE"].includes(method) ? "params" : "data";
 
@@ -25,12 +25,14 @@ const api = ({ dispatch }) => next => action => {
     .request({
       url,
       method,
+        headers,
       [dataOrParams]: data
     })
     .then(({ data }) => {
       dispatch(onSuccess(data));
     })
     .catch(error => {
+      // console.log(error.response)
       dispatch(onFailure(error));
     })
     .finally(() => {
